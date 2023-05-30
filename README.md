@@ -1,1 +1,1 @@
-# skillfactory_DesignStudio
+# Сайт студии дизайна для Skillfactory
