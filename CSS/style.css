@@ -330,3 +330,7 @@ body {
     display: flex;
     gap: 58px;
 }
+
+.broadcast__form-item {
+    display: flex;
+}
