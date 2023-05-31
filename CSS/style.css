@@ -189,6 +189,7 @@ body {
     color: #E3B873;
     margin: 0;
     margin-bottom: 34px;
+    margin-top: 69px;
 }
 
 .info-block__text {
@@ -219,7 +220,7 @@ body {
     font-family: 'Yeseva One';
     font-style: normal;
     font-size: 18px;
-    line-height: 25px;
+    line-height: normal;
     text-transform: uppercase;
     color: #E3B873;
 }
@@ -227,7 +228,35 @@ body {
 .info-block__details {
     font-style: normal;
     font-size: 13px;
-    line-height: 21px;
+    line-height: normal;
     color: #FFFFFF;
 }
 
+.info-block__photo {
+    display: flex;
+    flex-direction: column;
+    gap: 53px;
+}
+
+.info-block__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+.info-block__link {
+    text-decoration: none;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.info-block__link__style {
+    color: #E3B873;
+    text-decoration: underline;
+}
