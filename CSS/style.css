@@ -6,5 +6,81 @@
 
 body {
     font-family: 'Nunito Sans 7pt', Arial, Helvetica, sans-serif;
+    font-weight: 400;
     margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #131313;
+    min-height: 83px;
+    display: flex;
+    align-items: center;
+}
+
+.header__container {
+    padding: 0 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 180px;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 15px;
+    color:  #E3B873;
+}
+
+.header__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 47px;
+}
+
+.header__link {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.header__link__color {
+    color: #E3B873;
+}
+
+.header__link__txt-dec {
+    text-decoration: underline;
+}
+
+.header__wrapper-call {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+
+.header__btn {
+    width: 161px;
+    min-height: 37px;
+    padding: 13px 33px;
+    background-color: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    border: none;
+    font-style: italic;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
 }
