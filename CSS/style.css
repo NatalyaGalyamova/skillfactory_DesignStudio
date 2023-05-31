@@ -22,10 +22,10 @@ body {
     min-height: 83px;
     display: flex;
     align-items: center;
+    padding: 0 92px;
 }
 
 .header__container {
-    padding: 0 92px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,6 +37,7 @@ body {
     font-size: 11px;
     line-height: 15px;
     color:  #E3B873;
+    text-transform: uppercase;
 }
 
 .header__list {
@@ -84,3 +85,80 @@ body {
     color: #FFFFFF;
     cursor: pointer;
 }
+
+.hero {
+    min-height: 707px;
+    background-image: url(../images/jpg/background-1.jpg);
+    position: relative;
+    padding-top: 194px;
+    padding-left: 134px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+}
+
+.hero__title {
+    margin: 0;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 19px;
+}
+
+.hero__title__color {
+    color: #E3B873;
+}
+
+.hero__text {
+    margin: 0;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-bottom: 41px;
+}
+
+.hero__wrapper-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.hero__btn {
+    width: 207px;
+    min-height: 51px;
+    border-radius: 2px;
+    font-style: italic;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero__btn-1 {
+    background-color: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    border: none;
+}
+
+.hero__btn-2 {
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+}
+
