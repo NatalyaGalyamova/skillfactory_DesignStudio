@@ -325,3 +325,8 @@ body {
     color: #363636;
     margin-bottom: 91px;
 }
+
+.broadcast__form {
+    display: flex;
+    gap: 58px;
+}
