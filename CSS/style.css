@@ -149,6 +149,7 @@ body {
     line-height: 15px;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .hero__btn-1 {
@@ -160,5 +161,73 @@ body {
 .hero__btn-2 {
     border: 1px solid #FFFFFF;
     background-color: transparent;
+}
+
+.info-block {
+    min-height: 1074px;
+    background-color: #131313;
+    padding-top: 107px;
+    padding-left: 134px;
+}
+
+.info-block__container {
+    display: flex;
+    gap: 50px;
+}
+
+.info-block__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-block__title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 0;
+    margin-bottom: 34px;
+}
+
+.info-block__text {
+    margin: 0;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-bottom: 42px;
+}
+
+.info-block__text-wrapper {
+    display: grid;
+    grid-template-columns: 161px 213px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 34px;
+    grid-column-gap: 29px;
+    margin-bottom: 79px;
+}
+
+.info-block__text-wrapper-item {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.info-block__subtitle {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.info-block__details {
+    font-style: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
 }
 
