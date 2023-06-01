@@ -12,8 +12,8 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1440px;
-    padding: 0;
+    max-width: 2500px;
+    padding: 0 622px;
     margin: 0 auto;
 }
 
@@ -22,10 +22,11 @@ body {
     min-height: 83px;
     display: flex;
     align-items: center;
-    padding: 0 92px;
+    justify-content: center;
 }
 
 .header__container {
+    min-width: 1256px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,6 +90,7 @@ body {
 .hero {
     min-height: 707px;
     background-image: url(../images/jpg/background-1.jpg);
+    background-size: cover;
     position: relative;
     padding-top: 194px;
     padding-left: 134px;
@@ -192,7 +194,8 @@ body {
     margin-top: 69px;
 }
 
-.info-block__text {
+.info-block__text-item {
+    width: 442px;
     margin: 0;
     font-style: normal;
     font-size: 14px;
@@ -413,5 +416,5 @@ body {
 
 .cards {
     padding-left: 103px;
-    
+
 }
