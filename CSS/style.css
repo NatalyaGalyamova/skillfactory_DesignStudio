@@ -71,20 +71,23 @@ body {
     align-items: center;
 }
 
-.header__btn {
-    width: 161px;
-    min-height: 37px;
-    padding: 13px 33px;
+.btn {
     background-color: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     border-radius: 2px;
     border: none;
-    font-style: italic;
-    font-size: 11px;
-    line-height: 15px;
     text-transform: uppercase;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+.header__btn {
+    width: 161px;
+    min-height: 37px;
+    padding: 13px 33px;
+    font-style: italic;
+    font-size: 11px;
+    line-height: 15px;
 }
 
 .hero {
@@ -145,19 +148,10 @@ body {
 .hero__btn {
     width: 207px;
     min-height: 51px;
-    border-radius: 2px;
     font-style: italic;
     font-size: 11px;
     line-height: 15px;
     text-align: center;
-    color: #FFFFFF;
-    cursor: pointer;
-}
-
-.hero__btn-1 {
-    background-color: #E3B873;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
-    border: none;
 }
 
 .hero__btn-2 {
@@ -363,17 +357,10 @@ body {
     margin-left: -8px;
     width: 200px;
     min-height: 51px;
-    background-color: #E3B873;
-    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
-    border-radius: 2px;
-    border: none;
-    cursor: pointer;
     font-style: normal;
     font-size: 13px;
     line-height: 27px;
     text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
 }
 
 .broadcast__checkbox {
@@ -418,6 +405,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 124px;
 }
 
 .cards__title {
@@ -480,6 +468,11 @@ body {
 }
 
 .cards__tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 31px;
+    margin-top: -27px;
     width: 228px;
     min-height: 54px;
     background-color: #E3B873;
@@ -490,4 +483,66 @@ body {
     line-height: 25px;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.request {
+    min-height: 726px;
+    padding-top: 106px;
+    padding-left: 249px;
+    background-image: url(../images/jpg/background-2.jpg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+}
+
+.request__container {
+    display: flex;
+    gap: 170px;
+}
+
+.request__list {
+    display: flex;
+    flex-direction: column;
+    gap: 102px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 415px;
+    min-height: 474px;
+}
+
+.request__list-item {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+    padding-left: 50px;
+    position: relative;
+}
+
+.request__list-item:first-child::before {
+    content: url(../images/svg/bullet-point-1.svg);
+    position: absolute;
+    top: -20px;
+    left: -25px;
+}
+
+.request__list-item:nth-child(2)::before {
+    content: url(../images/svg/bullet-point-2.svg);
+    position: absolute;
+    top: -30px;
+    left: -25px;
+}
+
+.request__list-item:nth-child(3)::before {
+    content: url(../images/svg/bullet-point-3.svg);
+    position: absolute;
+    top: -30px;
+    left: -25px;
+}
+
+.request__list-item:last-child::before {
+    content: url(../images/svg/bullet-point-4.svg);
+    position: absolute;
+    top: -20px;
+    left: -25px;
 }
