@@ -46,8 +46,8 @@
                 <h1 class="hero__title">Turnkey Repair in the <br> city of <span class="hero__title__color">Rostov-on-Don</span></h1>
                 <p class="hero__text">Get ready-made turnkey repairs on time <br> with work time saving up to 45 days and 20% from <br> cost of materials due to the organization of work</p>
                 <div class="hero__wrapper-btn">
-                    <button class="hero__btn hero__btn-1 btn">CALCULATE THE COST</button>
-                    <button class="hero__btn hero__btn-2 btn">SUBMIT YOUR APPLICATION</button>
+                    <button class="hero__btn hero__btn-1 btn" type="button">CALCULATE THE COST</button>
+                    <button class="hero__btn hero__btn-2 btn" type="button">SUBMIT YOUR APPLICATION</button>
                 </div>
             </div>
         </section>
@@ -156,27 +156,27 @@
                 </div>
                 <p class="broadcast__text">At each facility, a camera is installed that broadcasts the progress of work on the <br> clock. At any time, you can go to our website and monitor the progress of work in <br> your apartment. You can watch the live broadcast from one of our facilities! <br> Leave a request below and you will receive a link to the broadcast.</p>
                 <form class="broadcast__form" action="/action_page.php">
-                    <div class="broadcast__form-item">
+                    <div class="broadcast__form-item form-item">
                         <label class="broadcast__label" for="name">
-                            <div class="broadcast__form-title">Name</div>
-                            <div class="broadcast__form-text">What is your name:</div>
+                            <div class="broadcast__form-title form-title">Name</div>
+                            <div class="broadcast__form-text form-text">What is your name:</div>
                         </label>
                         <input class="broadcast__input" type="text" id="name">
                     </div>
-                    <div class="broadcast__form-item">
+                    <div class="broadcast__form-item form-item">
                         <label class="broadcast__label" for="tel">
-                            <div class="broadcast__form-title">Phone</div>
-                            <div class="broadcast__form-text">Your phone number:</div>
+                            <div class="broadcast__form-title form-title">Phone</div>
+                            <div class="broadcast__form-text form-text">Your phone number:</div>
                         </label>
                         <input class="broadcast__input" type="text" id="tel">
                     </div>
                     <input class="broadcast__btn btn" type="submit" value="submit">
                 </form>
                 <div class="broadcast__checkbox">
-                    <label class="broadcast__checkbox-label">
-                        <input class="broadcast__checkbox-input" type="checkbox">
-                        <span class="broadcast__fake"></span>
-                        <span class="broadcast__checkbox-text">I agree to the processing of personal data</span>
+                    <label class="broadcast__checkbox-label checkbox-label">
+                        <input class="broadcast__checkbox-input checkbox-input" type="checkbox">
+                        <span class="broadcast__fake fake"></span>
+                        <span class="broadcast__checkbox-text checkbox-text">I agree to the processing of personal data</span>
                     </label>
                 </div>
             </div>
@@ -254,7 +254,40 @@
                     <li class="request__list-item">Get a cost estimate and <br> the timing of your future repairs</li>
                 </ul>
                 <div class="request__wrapper">
-                    <div class="request__form"></div>
+                    <div class="request__form-wrapper">
+                        <p class="request__text">Leave a request for free <br> departure of the measurer</p>
+                        <form class="request__form" action="/action_page.php">
+                            <div class="request__form-item form-item">
+                                <label class="request__label" for="name">
+                                    <div class="request__form-title form-title">Name</div>
+                                    <div class="request__form-text form-text">What is your name:</div>
+                                </label>
+                                <input class="request__input" type="text" id="name">
+                            </div>
+                            <div class="request__form-item form-item">
+                                <label class="request__label" for="tel">
+                                    <div class="request__form-title form-title">Phone</div>
+                                    <div class="request__form-text form-text">Your phone number:</div>
+                                </label>
+                                <input class="request__input" type="text" id="tel">
+                            </div>
+                            <div class="request__form-item form-item">
+                                <label class="request__label" for="tel">
+                                    <div class="request__form-title form-title">Email</div>
+                                    <div class="request__form-text form-text">Your email:</div>
+                                </label>
+                                <input class="request__input" type="text" id="tel">
+                            </div>
+                        </form>
+                        <div class="request__checkbox">
+                            <label class="request__checkbox-label checkbox-label">
+                                <input class="request__checkbox-input checkbox-input" type="checkbox">
+                                <span class="request__fake fake"></span>
+                                <span class="request__checkbox-text checkbox-text">I agree to the processing of personal data</span>
+                            </label>
+                        </div>
+                        <button class="request__btn btn" type="submit">Call the measurer</button>
+                    </div>
                     <div class="request__icon"></div>
                 </div>
             </div>
