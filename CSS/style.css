@@ -637,3 +637,13 @@ body {
     color: #E3B873;
     text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 }
+
+.gallery {
+    display: flex;
+    padding-left: 99px;
+    min-height: 1018px;
+    background-image: url(../images/jpg/background-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top 113;
+}
