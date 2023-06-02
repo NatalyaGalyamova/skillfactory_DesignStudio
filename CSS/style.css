@@ -647,6 +647,7 @@ body {
     background-size: 100% 864px;
     background-position: center top 113px;
     position: relative;
+    margin-bottom: 69px;
 }
 
 .gallery::after {
@@ -688,14 +689,15 @@ body {
     gap: 23px;
 }
 
-.gallery__list-item {
+.gallery__link {
     font-style: normal;
     font-size: 20px;
     line-height: normal;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
-.gallery__list-item:first-child {
+.gallery__link__style {
     color: #E3B873;
     text-decoration: underline;
 }
