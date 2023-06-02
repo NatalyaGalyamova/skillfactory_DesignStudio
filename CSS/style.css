@@ -719,3 +719,97 @@ body {
     top: 0;
     left: 984px;
 }
+
+.reviews {
+    min-height: 997px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/jpg/background-4.jpg);
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 777px;
+}
+
+.reviews__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews__title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+    margin: 0;
+    margin-bottom: 13px;
+}
+
+.reviews__icon {
+    margin-bottom: 24px;
+}
+
+.reviews__text {
+    margin: 0;
+    margin-bottom: 39px;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #363636;
+}
+
+.reviews__wrapper {
+    display: flex;
+    gap: 54px;
+    justify-content: center;
+}
+
+.reviews__wrapper-item {
+    display: flex;
+    flex-direction: column;
+    min-height: 455px;
+}
+
+.reviews__comment-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 24px;
+    padding-right: 25px;
+    min-width: 376px;
+    min-height: 428px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+.reviews__img-wrapper {
+    display: flex;
+    gap: 23px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reviews__img-text {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+}
+
+.reviews__comment {
+    font-style: normal;
+    font-size: 13px;
+    line-height: 23px;
+    color: #959595;
+    margin: 0;
+    margin-bottom: 62px;
+}
+
+.reviews__tag {
+    display: flex;
+}
