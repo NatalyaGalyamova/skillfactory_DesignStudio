@@ -644,6 +644,76 @@ body {
     min-height: 1018px;
     background-image: url(../images/jpg/background-3.jpg);
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: top 113;
+    background-size: 100% 864px;
+    background-position: center top 113px;
+    position: relative;
+}
+
+.gallery::after {
+    content: "";
+    position: absolute;
+    top: 113px;
+    right: 0;
+    bottom: 41px;
+    left: 0;
+    background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.gallery__list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+    min-width: 411px;
+    position: absolute;
+    top: 250px;
+    z-index: 1;
+}
+
+.gallery__title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-size: 27px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 0;
+}
+
+.gallery__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.gallery__list-item {
+    font-style: normal;
+    font-size: 20px;
+    line-height: normal;
+    color: #FFFFFF;
+}
+
+.gallery__list-item:first-child {
+    color: #E3B873;
+    text-decoration: underline;
+}
+
+.gallery__img {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.gallery__img-1 {
+    top: 73px;
+    left: 587px;
+}
+
+.gallery__img-2 {
+    top: 0;
+    left: 984px;
 }
