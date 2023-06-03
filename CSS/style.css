@@ -810,6 +810,33 @@ body {
     margin-bottom: 62px;
 }
 
+.reviews__tag-wrapper {
+    display: flex;
+    background: #E3B873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    width: 294px;
+    margin-top: -27px;
+}
+
 .reviews__tag {
     display: flex;
+    min-height: 54px;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    font-family: 'Yeseva One'; 
+    font-style: normal;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.reviews__tag-1 {
+    min-width: 134px;
+    border-right: 0.75px solid #FFFFFF;;
+}
+
+.reviews__tag-2 {
+    min-width: 160px;
 }
