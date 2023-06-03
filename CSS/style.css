@@ -834,9 +834,67 @@ body {
 
 .reviews__tag-1 {
     min-width: 134px;
-    border-right: 0.75px solid #FFFFFF;;
+    border-right: 0.75px solid #FFFFFF;
 }
 
 .reviews__tag-2 {
     min-width: 160px;
+}
+
+.contacts {
+    min-height: 954px;
+    background-image: url(../images/jpg/background-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contacts::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+}
+
+.contacts__container {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts__form-wrapper {
+    width: 883px;
+    min-height: 445px;
+    background-color: #181818;
+    padding-top: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts__title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 46px;
+}
+
+.contacts__form {
+    display: flex;
+    width: 520px;
+    flex-wrap: wrap;
+    column-gap: 58px;
+    row-gap: 48px;
 }
