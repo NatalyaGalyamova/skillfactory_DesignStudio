@@ -96,7 +96,8 @@ body {
     background-size: cover;
     position: relative;
     padding-top: 194px;
-    padding-left: 134px;
+    display: flex;
+    justify-content: center;
 }
 
 .hero::after {
@@ -107,6 +108,10 @@ body {
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, .7);
+}
+
+.hero__wrapper {
+    width: 1172px;
 }
 
 .hero__container {
@@ -163,7 +168,8 @@ body {
     min-height: 1074px;
     background-color: #131313;
     padding-top: 107px;
-    padding-left: 134px;
+    display: flex;
+    justify-content: center;
 }
 
 .info-block__container {
@@ -528,7 +534,8 @@ body {
 .request {
     min-height: 726px;
     padding-top: 106px;
-    padding-left: 249px;
+    display: flex;
+    justify-content: center;
     background-image: url(../images/jpg/background-2.jpg);
     background-repeat: no-repeat;
     background-position: left 0 top 0;
@@ -537,7 +544,9 @@ body {
 
 .request__container {
     display: flex;
+    justify-content: end;
     gap: 170px;
+    width: 1236px;
 }
 
 .request__list {
@@ -674,7 +683,7 @@ body {
 
 .gallery {
     display: flex;
-    padding-left: 99px;
+    justify-content: center;
     min-height: 1018px;
     background-image: url(../images/jpg/background-3.jpg);
     background-repeat: no-repeat;
@@ -692,6 +701,11 @@ body {
     bottom: 41px;
     left: 0;
     background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.gallery__container {
+    position: relative;
+    width: 1236px;
 }
 
 .gallery__list-wrapper {
@@ -746,12 +760,12 @@ body {
 
 .gallery__img-1 {
     top: 73px;
-    left: 587px;
+    left: 488px;
 }
 
 .gallery__img-2 {
     top: 0;
-    left: 984px;
+    left: 885px;
 }
 
 .reviews {
@@ -884,6 +898,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .contacts::after {
@@ -896,11 +913,14 @@ body {
     background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
 }
 
+.contacts__container-wrapper {
+    position: relative;
+    width: 925px;
+}
+
 .contacts__container {
     position: absolute;
     z-index: 1;
-    top: 0;
-    left: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1001,5 +1021,29 @@ body {
 
 .footer {
     min-height: 133px;
+}
+/*
+@media screen and (max-width: 1440px) {
+    .contacts__container {
+        left: 250px;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    .contacts__container {
+        left: 210px;
+    }
+
+    .request {
+        padding-left: 209px;
+    }
+
+    .gallery__img-1 {
+        left: 547px;
+    }
+
+    .gallery__img-2 {
+        left: 944px; 
+    }
 }
 
