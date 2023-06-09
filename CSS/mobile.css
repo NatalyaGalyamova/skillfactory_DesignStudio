@@ -405,6 +405,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 63px;
+    width: 340px;
 }
 
 .form-item {
@@ -519,6 +520,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 59px;
+    width: 340px;
 }
 
 .cards__wrapper-item {
