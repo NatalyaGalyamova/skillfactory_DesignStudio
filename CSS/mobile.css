@@ -587,7 +587,7 @@ body {
     min-height: 332px;
     background-image: none;
     position: static;
-    margin-bottom: 69px;
+    margin-bottom: 0;
 }
 
 .gallery::after {
@@ -654,10 +654,8 @@ body {
 }
 
 .contacts {
-    min-height: 954px;
-    background-image: url(../images/jpg/background-5.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-height: 1195px;
+    background-image: none;
     position: relative;
     text-align: center;
     display: flex;
@@ -665,38 +663,33 @@ body {
 }
 
 .contacts::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+    display: none;
 }
 
 .contacts__container-wrapper {
     position: relative;
-    width: 925px;
+    width: 375px;
 }
 
 .contacts__container {
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -222px;
+    margin-top: 0;
+    background-color: #181818;
 }
 
 .contacts__form-wrapper {
-    width: 883px;
-    min-height: 445px;
+    width: 340px;
+    min-height: 971px;
     background-color: #181818;
-    padding-top: 34px;
+    padding-top: 173px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 52px;
+    margin-bottom: 42px;
 }
 
 .contacts__title {
@@ -708,20 +701,19 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     margin: 0;
-    margin-bottom: 46px;
+    margin-bottom: 52px;
 }
 
 .contacts__form {
     display: flex;
-    width: 520px;
-    flex-wrap: wrap;
-    column-gap: 58px;
-    row-gap: 48px;
-    margin-bottom: 46px;
+    width: 340px;
+    flex-direction: column;
+    gap: 63px;
+    margin-bottom: 22px;
 }
 
 .contacts__form-item {
-    width: 231px;
+    width: 340px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
@@ -740,7 +732,7 @@ body {
 }
 
 .contacts__form-item__size-big {
-    width: 517px;
+    width: 340px;
 }
 
 .contacts__checkbox-text {
@@ -781,7 +773,7 @@ body {
 }
 
 .footer {
-    min-height: 133px;
+    display: none;
 }
 
 
