@@ -89,6 +89,7 @@ body {
     padding-top: 85px;
     display: flex;
     justify-content: center;
+    margin-top: -1px;
 }
 
 .hero::after {
@@ -161,10 +162,11 @@ body {
 
 .info-block {
     min-height: none;
-    background-color: #131313;
+    background-color: rgb(0, 0, 0);
     padding-top: 36px;
     display: flex;
     justify-content: center;
+    margin-top: -1px;
 }
 
 .info-block__container {
@@ -320,8 +322,8 @@ body {
 .broadcast {
     display: flex;
     justify-content: center;
-    background-color: #131313;
-    margin-top: -323px;
+    background-color: rgb(0, 0, 0);
+    margin-top: -321px;
     margin-bottom: 83px;
 }
 
@@ -357,13 +359,13 @@ body {
 }
 
 .broadcast__img {
-    width: 340px;
-    height: 207px;
+    width: 339px;
+    height: 206px;
 }
 
 .broadcast__btn-svg {
-    width: 37px;
-    height: 37px;
+    width: 65px;
+    height: 65px;
 }
 
 .broadcast__img-wrapper::after {
@@ -541,6 +543,7 @@ body {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
     align-self: start;
     margin-top: -127px;
+    margin-left: -1px;
 }
 
 .cards__subtitle {

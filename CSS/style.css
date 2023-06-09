@@ -98,6 +98,7 @@ body {
     padding-top: 194px;
     display: flex;
     justify-content: center;
+    margin-top: -1px;
 }
 
 .hero::after {
@@ -172,6 +173,7 @@ body {
     padding-top: 107px;
     display: flex;
     justify-content: center;
+    margin-top: -1px;
 }
 
 .info-block__img-mobile {
@@ -1032,6 +1034,7 @@ body {
 }
 
 .footer {
+    margin-top: -1px;
     min-height: 133px;
 }
 
