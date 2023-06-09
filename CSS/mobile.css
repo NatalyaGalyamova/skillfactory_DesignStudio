@@ -12,7 +12,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 2500px;
+    max-width: 786px;
     padding: 0;
     margin: 0 auto;
 }
@@ -83,7 +83,7 @@ body {
 
 .hero {
     min-height: 476px;
-    background-image: url(../images/jpg/background-1.jpg);
+    background-image: url(../images/jpg/background-1_mobile.jpg);
     background-size: cover;
     position: relative;
     padding-top: 85px;
@@ -320,7 +320,7 @@ body {
 .broadcast {
     display: flex;
     justify-content: center;
-    background-color: transparent;
+    background-color: #131313;
     margin-top: -323px;
     margin-bottom: 83px;
 }
@@ -330,6 +330,7 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
+    width: 375px;
 }
 
 .broadcast__title {
@@ -394,7 +395,7 @@ body {
     font-size: 11px;
     line-height: 19px;
     color: #FFFFFF;
-    width: 370px;
+    width: 362px;
     min-height: 107px;
     margin-bottom: 61px;
 }
@@ -430,7 +431,7 @@ body {
 }
 
 .broadcast__input {
-    width: 190px;
+    width: 90px;
     border: none;
 }
 
@@ -586,7 +587,7 @@ body {
     justify-content: center;
     min-height: 332px;
     background-image: none;
-    position: static;
+    position: relative;
     margin-bottom: 0;
 }
 
@@ -595,7 +596,8 @@ body {
 }
 
 .gallery__container {
-    position: static;
+    position: absolute;
+    z-index: 1;
     width: 340px;
     min-height: 332px;
     background-image: url(../images/png/img-2_mobile.png);
@@ -660,6 +662,8 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
+    background-color: #181818;
+    margin-top: -121px;
 }
 
 .contacts::after {
@@ -667,13 +671,12 @@ body {
 }
 
 .contacts__container-wrapper {
-    position: relative;
+    position: static;
     width: 375px;
 }
 
 .contacts__container {
-    position: absolute;
-    z-index: -1;
+    position: static;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -690,6 +693,9 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 42px;
+    background-image: url(../images/png/map_mobile.png);
+    background-repeat: no-repeat;
+    background-position: center bottom 0;
 }
 
 .contacts__title {
@@ -718,6 +724,7 @@ body {
 }
 
 .contacts__form-title {
+    text-align: left;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -740,11 +747,12 @@ body {
 }
 
 .contacts__checkbox {
-    margin-bottom: 50px;
+    margin-bottom: 67px;
+    align-self: start;
 }
 
 .contacts__btn {
-    width: 200px;
+    width: 340px;
     min-height: 51px;
 }
 
@@ -752,19 +760,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 26px;
-    margin-bottom: 43px;
+    gap: 23px;
+    margin-bottom: 49px;
+    width: 375px;
 }
 
 .contacts__text {
     margin: 0;
     font-family: 'Yeseva One';
     font-style: normal;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 25px;
     text-align: center;
     text-transform: uppercase;
     color: #E3B873;
+    width: 306px;
 }
 
 .contacts__icons {
