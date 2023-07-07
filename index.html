@@ -81,15 +81,15 @@
                     <div class="info-block__text-wrapper">
                         <div class="info-block__text-wrapper-item">
                             <h3 class="info-block__subtitle">City:</h3>
-                            <div class="info-block__details">Rostov-on-Don <br> LCD admiral</div>
+                            <div id="city" class="info-block__details">Rostov-on-Don LCD admiral</div>
                         </div>
                         <div class="info-block__text-wrapper-item">
                             <h3 class="info-block__subtitle">apartment area:</h3>
-                            <div class="info-block__details">81 m2</div>
+                            <div id="area" class="info-block__details">81 m2</div>
                         </div>
                         <div class="info-block__text-wrapper-item">
                             <h3 class="info-block__subtitle">Repair time:</h3>
-                            <div class="info-block__details">3.5 months</div>
+                            <div id="time" class="info-block__details">3.5 months</div>
                         </div>
                         <div class="info-block__text-wrapper-item">
                             <h3 class="info-block__subtitle">Repair Cost:</h3>
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                     <div class="info-block__arrows-dots">
-                        <button class="info-block__arrows" type="button">
+                        <button id="left-arrow" class="info-block__arrows" type="button">
                             <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M6.63807 13.2761L2.29917e-05 6.63808L6.63807 3.80641e-05L7.58563 0.947606L1.89516 6.63808L7.58563 12.3286L6.63807 13.2761Z"
@@ -111,7 +111,7 @@
                             <button class="info-block__dots" type="button"></button>
                             <button class="info-block__dots" type="button"></button>
                         </div>
-                        <button class="info-block__arrows" type="button">
+                        <button id="right-arrow" class="info-block__arrows" type="button">
                             <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M35.0451 0L41.6831 6.63804L35.0451 13.2761L34.0975 12.3285L39.788 6.63804L34.0975 0.947567L35.0451 0Z"
@@ -134,7 +134,7 @@
                             <button class="info-block__btn" type="button">Rostov-on-Don Patriotic</button>
                         </li>
                     </ul>
-                    <img src="./images/png/photo.png" alt="interior picture">
+                    <img class="info-block__img" src="./images/png/photo.png" alt="interior picture">
                 </div>
             </div>
         </section>
@@ -845,5 +845,6 @@
             </div>
         </div>
     </footer>
+    <script src="./JS/slider.js"></script>
 </body>
 </html>
