@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 const entities = [
   {
     title: 'Rostov-on-Don, Admiral',
@@ -20,17 +21,16 @@ const entities = [
     area: '93 m2',
     time: '3 months'
   }
-]
+];
 
-const title = document.querySelector('.info-block__btn')
+const titles = document.querySelectorAll('.info-block__list-item')
 const img = document.querySelector('.info-block__img')
 const city = document.querySelector('#city')
 const area = document.querySelector('#area')
 const time = document.querySelector('#time')
-const dots = document.querySelector('.info-block__dots')
+const dots = document.querySelectorAll('.info-block__dots')
 
 const setEntity = (index) => {
-  title.innerText = entities[index].title
   img.src = entities[index].img
   city.innerText = entities[index].city
   area.innerText = entities[index].area
@@ -42,12 +42,43 @@ const rightArrow = document.querySelector('#right-arrow')
 let currentIndex = 0
 
 leftArrow.addEventListener('click', () => {
-  setEntity(currentIndex - 1);
-  currentIndex -= 1;
+  setEntity(currentIndex === 0 ? entities.length - 1 : currentIndex - 1)
+  dots[currentIndex].classList.remove('active')
+  titles[currentIndex].classList.remove('list-item_active')
+  currentIndex = currentIndex === 0 ? entities.length - 1 : currentIndex - 1
+  dots[currentIndex].classList.add('active')
+  titles[currentIndex].classList.add('list-item_active')
 })
 rightArrow.addEventListener('click', () => {
-  setEntity(currentIndex + 1);
-  currentIndex += 1;
+  setEntity(currentIndex === entities.length - 1 ? 0 : currentIndex + 1)
+  dots[currentIndex].classList.remove('active')
+  titles[currentIndex].classList.remove('list-item_active')
+  currentIndex = currentIndex === entities.length - 1 ? 0 : currentIndex + 1
+  dots[currentIndex].classList.add('active')
+  titles[currentIndex].classList.add('list-item_active')
+})
+
+titles.forEach((item, index) => {
+  item.addEventListener('click', () => {
+    setEntity(index)
+    dots[currentIndex].classList.remove('active')
+    titles[currentIndex].classList.remove('list-item_active')
+    currentIndex = index
+    dots[currentIndex].classList.add('active')
+    titles[currentIndex].classList.add('list-item_active')
+  })
+})
+
+dots.forEach((item, index) => {
+  item.addEventListener('click', () => {
+    setEntity(index)
+    dots[currentIndex].classList.remove('active')
+    titles[currentIndex].classList.remove('list-item_active')
+    currentIndex = index
+    dots[currentIndex].classList.add('active')
+    titles[currentIndex].classList.add('list-item_active')
+  })
+})
 })
   
 

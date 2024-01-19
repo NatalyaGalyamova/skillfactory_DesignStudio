@@ -259,7 +259,7 @@ body {
     gap: 60px;
 }
 
-.info-block__btn {
+.info-block__list-item {
     border: none;
     background-color: transparent;
     font-family: 'Yeseva One';
@@ -271,7 +271,8 @@ body {
     cursor: pointer;
 }
 
-.info-block__btn:focus {
+.info-block__list a:hover, 
+.info-block__list .list-item_active a {
     color: #E3B873;
     text-decoration: underline;
 }
@@ -284,19 +285,24 @@ body {
 
 .info-block__dots-wrapper {
     display: flex;
+    flex-direction: row;
     gap: 18px;
 }
 
 .info-block__dots {
     width: 9.57px;
-    min-height: 9.57px;
+    height: 9.57px;
     border: none;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.3);
     cursor: pointer;
 }
 
-.info-block__dots:focus {
+.active {
+	background: #FFFFFF;
+}
+
+.info-block__dots:hover {
     background-color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
